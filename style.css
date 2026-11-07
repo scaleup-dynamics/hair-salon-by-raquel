@@ -1,0 +1,33 @@
+/* Custom styles for Raquel Mae Hair Stylist */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+a, button, [onclick], [role="button"], select, input[type="date"] {
+    cursor: pointer;
+}
+
+/* Visible keyboard focus */
+:focus-visible {
+    outline: 3px solid #C5A880;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Quiet, deliberate motion */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
